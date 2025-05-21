@@ -7,13 +7,15 @@ const Testimonials = () => {
       name: "Alex Johnson",
       role: "Beginner Developer",
       comment: "I had zero coding experience, but this course helped me launch my first app in just 3 weeks. Now earning $300/month passive income!",
-      stars: 5
+      stars: 5,
+      image: "/lovable-uploads/4a7d9af2-0443-4f61-88f2-620b5b739be9.png"
     },
     {
       name: "Sarah Miller",
       role: "Design Student",
       comment: "The AdMob integration was surprisingly easy to follow. My simple puzzle game now generates consistent revenue every month.",
-      stars: 5
+      stars: 5,
+      image: "/lovable-uploads/da3ca06d-3a9f-4a50-8fc0-27c2336e354f.png"
     },
     {
       name: "Michael Chen",
@@ -51,6 +53,17 @@ const Testimonials = () => {
               <div className="flex mb-4">
                 {renderStars(testimonial.stars)}
               </div>
+              
+              {testimonial.image && (
+                <div className="mb-4 rounded-lg overflow-hidden border border-gray-200">
+                  <img 
+                    src={testimonial.image} 
+                    alt={`${testimonial.name}'s testimonial`}
+                    className="w-full h-auto"
+                  />
+                </div>
+              )}
+              
               <p className="text-gray-700 mb-6">"{testimonial.comment}"</p>
               <div className="flex items-center">
                 <div className="w-10 h-10 rounded-full bg-gray-200 flex items-center justify-center font-bold text-gray-500">

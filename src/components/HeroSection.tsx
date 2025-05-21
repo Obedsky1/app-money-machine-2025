@@ -2,6 +2,7 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
+import { AspectRatio } from '@/components/ui/aspect-ratio';
 
 const HeroSection = () => {
   const scrollToPayment = () => {
@@ -19,8 +20,8 @@ const HeroSection = () => {
           aria-hidden="true"
         ></div>
         <img 
-          src="/placeholder.svg"
-          alt="Mobile apps with AdMob integration" 
+          src="/lovable-uploads/7e38adde-9a53-4549-8724-0bc2f233a1d8.png"
+          alt="Mobile browser app built with AdMob" 
           className="w-full h-full object-cover opacity-60"
         />
       </div>

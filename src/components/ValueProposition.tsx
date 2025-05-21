@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Check } from 'lucide-react';
+import { AspectRatio } from '@/components/ui/aspect-ratio';
 
 const ValueProposition = () => {
   const benefits = [
@@ -38,15 +39,16 @@ const ValueProposition = () => {
           </div>
           
           <div className="bg-gray-100 rounded-lg p-6 shadow-inner">
-            <div className="aspect-video bg-white rounded-lg shadow-md overflow-hidden border border-gray-200">
-              <div className="bg-brand-red text-white text-sm font-medium py-1 px-4">
-                Course Preview
-              </div>
-              <div className="flex items-center justify-center h-full bg-gray-200">
-                <p className="text-gray-600">Course dashboard preview</p>
-              </div>
+            <div className="rounded-lg overflow-hidden border border-gray-200 shadow-md">
+              <AspectRatio ratio={9/16}>
+                <img 
+                  src="/lovable-uploads/e080f3a9-8b42-4b7a-afe1-484980f7a475.png" 
+                  alt="Music Player App with AdMob integration" 
+                  className="w-full h-full object-cover"
+                />
+              </AspectRatio>
             </div>
-            <p className="mt-4 text-center text-gray-500 text-sm">Preview of the course dashboard</p>
+            <p className="mt-4 text-center text-gray-500 text-sm">Example of a music player app you'll learn to build</p>
           </div>
         </div>
       </div>
