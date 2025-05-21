@@ -77,8 +77,9 @@ const HeroSlideshow = () => {
       <Carousel 
         setApi={setApi}
         className="w-full"
-        onSelect={(index) => {
-          setCurrentSlide(index);
+        onSelect={(api) => {
+          const selectedIndex = api.selectedScrollSnap();
+          setCurrentSlide(selectedIndex);
         }}
       >
         <CarouselContent>
