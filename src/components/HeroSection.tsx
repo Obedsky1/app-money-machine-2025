@@ -2,7 +2,7 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
-import { AspectRatio } from '@/components/ui/aspect-ratio';
+import HeroSlideshow from './HeroSlideshow';
 
 const HeroSection = () => {
   const scrollToPayment = () => {
@@ -16,17 +16,13 @@ const HeroSection = () => {
     <section className="relative min-h-screen flex items-center bg-black">
       <div className="absolute inset-0 z-0">
         <div 
-          className="absolute inset-0 bg-gradient-to-r from-black/90 to-brand-red/60 mix-blend-multiply"
+          className="absolute inset-0 bg-gradient-to-r from-black/90 to-brand-red/60 mix-blend-multiply z-10"
           aria-hidden="true"
         ></div>
-        <img 
-          src="/lovable-uploads/7e38adde-9a53-4549-8724-0bc2f233a1d8.png"
-          alt="Mobile browser app built with AdMob" 
-          className="w-full h-full object-cover opacity-60"
-        />
+        <HeroSlideshow />
       </div>
 
-      <div className="section-container relative z-10 pt-20">
+      <div className="section-container relative z-20 pt-20">
         <div className="max-w-3xl animate-fade-in">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-6">
             Build Simple Apps.<br />
