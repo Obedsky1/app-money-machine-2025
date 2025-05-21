@@ -2,7 +2,6 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
-import HeroSlideshow from './HeroSlideshow';
 
 const HeroSection = () => {
   const scrollToPayment = () => {
@@ -19,7 +18,6 @@ const HeroSection = () => {
           className="absolute inset-0 bg-gradient-to-r from-black/90 to-brand-red/60 mix-blend-multiply z-10"
           aria-hidden="true"
         ></div>
-        <HeroSlideshow />
       </div>
 
       <div className="section-container relative z-20 pt-20">
