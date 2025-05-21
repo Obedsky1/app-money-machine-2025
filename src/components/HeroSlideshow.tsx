@@ -77,7 +77,9 @@ const HeroSlideshow = () => {
       <Carousel 
         setApi={setApi}
         className="w-full"
-        onSelect={(index) => setCurrentSlide(index)}
+        onSelect={(index) => {
+          setCurrentSlide(index);
+        }}
       >
         <CarouselContent>
           {earningsSlides.map((slide, index) => (
